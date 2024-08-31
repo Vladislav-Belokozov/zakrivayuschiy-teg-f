@@ -25,7 +25,7 @@
     repeating-linear-gradient(to bottom, var(--background-image-lines) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, var(--background-image));
   background-size: cover;
-  font-family: var(--main-font);
+  font-family: var(--page-main-font-family, "Inter", sans-serif);
   color: var(--accent-color);
   font-variation-settings: 'wght' var(--text-font-weight);
 }
@@ -464,7 +464,6 @@ dialog::backdrop {
 
   .dialog[open] {
     width: 341px;
-    height: 195px;
     padding-inline: 38px;
   }
 
