@@ -25,7 +25,7 @@
     repeating-linear-gradient(to bottom, var(--background-image-lines) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, var(--background-image));
   background-size: cover;
-  font-family: var(--page-main-font-family, "Inter", sans-serif);
+  font-family: var(--main-font);
   color: var(--accent-color);
   font-variation-settings: 'wght' var(--text-font-weight);
 }
@@ -235,10 +235,8 @@
   z-index: 1;
 }
 
-@supports ((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke:  1px var(--backdround-color))) {
+@supports (-webkit-text-stroke:  1px var(--backdround-color)) {
   .watermark {
-    -webkit-text-stroke: 1px var(--background-color);
-    text-stroke: 1px var(--background-color);
     text-shadow: none;
   }
 }
@@ -358,9 +356,14 @@
   mix-blend-mode: difference;
 }
 
+.save-icon-mobil {
+  fill: none;
+  width: 39px;
+  height: 39px;
+}
+
 .dialog[open] {
   width: 357px;
-  height: 193px;
   padding: 30px;
   border: var(--border);
   background-color: var(--background-color);
@@ -471,3 +474,4 @@ dialog::backdrop {
     width: 257px;
   }
 }
+
