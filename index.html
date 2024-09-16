@@ -231,11 +231,15 @@
         </div>
       </article>
       <button class="save-button button" type="button" onclick="window['save-dialog'].showModal()" aria-controls="save-dialog">
-        <img class="save-icon " src="./svg/floppy.svg" alt="floppy disk icon">
+        <svg class="floppy" viewBox="0 0 21 21">
+          <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog" id="save-dialog">
-        <img class="save-icon-mobil" height="39" width="39" src="./svg/floppy.svg" alt="floppy disk icon">
+        <svg class="dialog-window-floppy floppy" viewBox="0 0 21 21">
+          <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
         <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
         <form method="dialog" class="button-form">
           <button class="dialog__button button" type="button" onclick="window['save-dialog'].close()">

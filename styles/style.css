@@ -1,4 +1,4 @@
-/* Здесь вы напишете основную часть стилей страницы.
+  /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
@@ -25,7 +25,7 @@
     repeating-linear-gradient(to bottom, var(--background-image-lines) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, var(--background-image));
   background-size: cover;
-  font-family: var(--main-font);
+  font-family: var(--main-font), Arial, sans-serif;
   color: var(--accent-color);
   font-variation-settings: 'wght' var(--text-font-weight);
 }
@@ -55,7 +55,7 @@
   background-color: var(--accent-color);
   transform: scale(0,1);
   transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out; 
 }
 
 .button:focus {
@@ -222,7 +222,7 @@
   margin-block-start: max(23px, 1.736%);
   margin-inline-end: max(11px, 1.736%);
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: var(--title-font-weight);
   text-shadow:
@@ -334,7 +334,7 @@
 .button__text {
   color: var(--mix-blend-color);
   mix-blend-mode: difference;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 14px;
   line-height: 90%;
 }
@@ -356,7 +356,7 @@
   mix-blend-mode: difference;
 }
 
-.save-icon-mobil {
+.save-iconmobile {
   fill: none;
   width: 39px;
   height: 39px;
@@ -388,7 +388,7 @@ dialog::backdrop {
 
 .dialog__title {
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 0.875rem;
   line-height: 150%;
 }
@@ -473,5 +473,19 @@ dialog::backdrop {
   .dialog__button {
     width: 257px;
   }
+}
+
+.floppy {
+  block-size: 21px;
+  inline-size: 21px;
+  --background-image: #007f0c, #004306;
+  fill: var(--accent-color)
+  
+}
+  
+
+ .dialog-window-floppy {
+  block-size: 39px;
+  inline-size: 39px;
 }
 
