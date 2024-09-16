@@ -480,11 +480,9 @@ dialog::backdrop {
   inline-size: 21px;
   --background-image: #007f0c, #004306;
   fill: var(--accent-color)
+  }
   
-}
-  
-
- .dialog-window-floppy {
+  .dialog-window-floppy {
   block-size: 39px;
   inline-size: 39px;
 }
